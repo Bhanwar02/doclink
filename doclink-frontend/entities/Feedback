@@ -1,0 +1,30 @@
+{
+  "name": "Feedback",
+  "type": "object",
+  "properties": {
+    "appointment_id": {
+      "type": "string"
+    },
+    "patient_email": {
+      "type": "string"
+    },
+    "doctor_id": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "number"
+    },
+    "comment": {
+      "type": "string"
+    },
+    "is_anonymous": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "appointment_id",
+    "doctor_id",
+    "rating"
+  ]
+}

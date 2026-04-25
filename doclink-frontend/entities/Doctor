@@ -1,0 +1,69 @@
+{
+  "name": "Doctor",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string",
+      "description": "Email linking to User entity"
+    },
+    "specialty": {
+      "type": "string",
+      "enum": [
+        "General Practice",
+        "Cardiology",
+        "Dermatology",
+        "Pediatrics",
+        "Orthopedics",
+        "Neurology",
+        "Psychiatry",
+        "Gynecology",
+        "Ophthalmology",
+        "ENT"
+      ]
+    },
+    "qualification": {
+      "type": "string"
+    },
+    "experience_years": {
+      "type": "number"
+    },
+    "bio": {
+      "type": "string"
+    },
+    "avatar_url": {
+      "type": "string"
+    },
+    "available_days": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "available_hours_start": {
+      "type": "string"
+    },
+    "available_hours_end": {
+      "type": "string"
+    },
+    "consultation_fee": {
+      "type": "number",
+      "default": 0
+    },
+    "rating": {
+      "type": "number",
+      "default": 5
+    },
+    "total_consultations": {
+      "type": "number",
+      "default": 0
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "user_email",
+    "specialty"
+  ]
+}

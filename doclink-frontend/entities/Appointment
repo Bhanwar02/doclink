@@ -1,0 +1,59 @@
+{
+  "name": "Appointment",
+  "type": "object",
+  "properties": {
+    "patient_email": {
+      "type": "string"
+    },
+    "patient_name": {
+      "type": "string"
+    },
+    "doctor_id": {
+      "type": "string"
+    },
+    "doctor_name": {
+      "type": "string"
+    },
+    "appointment_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "appointment_time": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "approved",
+        "rejected",
+        "completed",
+        "cancelled"
+      ],
+      "default": "pending"
+    },
+    "symptoms": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "consultation_type": {
+      "type": "string",
+      "enum": [
+        "video",
+        "chat"
+      ],
+      "default": "video"
+    },
+    "meeting_link": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "patient_email",
+    "doctor_id",
+    "appointment_date",
+    "appointment_time"
+  ]
+}

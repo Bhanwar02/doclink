@@ -1,0 +1,54 @@
+{
+  "name": "Medicine",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "generic_name": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Antibiotics",
+        "Pain Relief",
+        "Cardiovascular",
+        "Diabetes",
+        "Vitamins",
+        "Respiratory",
+        "Digestive",
+        "Skin Care",
+        "Mental Health",
+        "Other"
+      ]
+    },
+    "description": {
+      "type": "string"
+    },
+    "price": {
+      "type": "number"
+    },
+    "stock_quantity": {
+      "type": "number"
+    },
+    "requires_prescription": {
+      "type": "boolean",
+      "default": true
+    },
+    "manufacturer": {
+      "type": "string"
+    },
+    "image_url": {
+      "type": "string"
+    },
+    "is_available": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "name",
+    "price"
+  ]
+}

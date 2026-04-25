@@ -1,0 +1,66 @@
+{
+  "name": "HealthSeminar",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "speaker_name": {
+      "type": "string"
+    },
+    "speaker_title": {
+      "type": "string"
+    },
+    "event_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "event_time": {
+      "type": "string"
+    },
+    "duration_minutes": {
+      "type": "number"
+    },
+    "topic_category": {
+      "type": "string",
+      "enum": [
+        "Heart Health",
+        "Mental Wellness",
+        "Nutrition",
+        "Diabetes Management",
+        "Women's Health",
+        "Child Care",
+        "Senior Care",
+        "Fitness",
+        "General Wellness"
+      ]
+    },
+    "meeting_link": {
+      "type": "string"
+    },
+    "image_url": {
+      "type": "string"
+    },
+    "max_attendees": {
+      "type": "number"
+    },
+    "registered_emails": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "title",
+    "event_date",
+    "event_time"
+  ]
+}
