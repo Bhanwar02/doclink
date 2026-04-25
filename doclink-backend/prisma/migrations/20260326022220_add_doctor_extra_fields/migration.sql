@@ -1,0 +1,6 @@
+-- AlterTable
+ALTER TABLE "Doctor" ADD COLUMN     "bio" TEXT NOT NULL DEFAULT '',
+ADD COLUMN     "consultationFee" DECIMAL(65,30) NOT NULL DEFAULT 0,
+ADD COLUMN     "experienceYears" INTEGER NOT NULL DEFAULT 0,
+ADD COLUMN     "isActive" BOOLEAN NOT NULL DEFAULT true,
+ADD COLUMN     "qualification" TEXT NOT NULL DEFAULT '';
